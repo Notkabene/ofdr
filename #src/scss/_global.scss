@@ -17,16 +17,16 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 24px;
-  color: #000;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $text;
 }
 
 ul,
 li {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -44,15 +44,15 @@ h6 {
 }
 
 a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   display: inline-block;
   text-decoration: none;
-  color: #fff;
+  color: $text;
 }
 
 button,
 select {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   cursor: pointer;
   outline: none;
 }
@@ -70,7 +70,7 @@ select {
     content: '';
     width: 0px;
     height: 1px;
-    background-color: #000;
+    background-color: $text;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -81,3 +81,67 @@ select {
     width: 100%;
   }
 }
+
+// Burger
+.header__burger {
+  display: none;
+}
+
+// Блеск соцсетям
+.shine {
+  &:after {
+    content: "";
+    height: 200%;
+    left: -230%;
+    opacity: 0;
+    position: absolute;
+    top: -20%;
+    transform: rotate(-30deg);
+    width: 200%;
+
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(to right,
+        rgba(255, 255, 255, 0.13) 0%,
+        rgba(255, 255, 255, 0.13) 77%,
+        rgba(255, 255, 255, 0.5) 92%,
+        rgba(255, 255, 255, 0.0) 100%);
+  }
+
+  &:hover:after {
+    left: -50%;
+    opacity: 1;
+    top: -50%;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-property: left, top, opacity;
+    transition-timing-function: ease;
+  }
+}
+
+// Кнопки
+.btn {
+  padding: 12px;
+  width: 195px;
+
+  font-family: 'Gilroy',
+  sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+
+  border-radius: 3px;
+  border: none;
+  transition: all .5s ease-out;
+
+
+  &.orange {
+    background: linear-gradient(90deg, #F6BD60 0%, #E88952 100%);
+    box-shadow: 0px 8px 18px rgba(242, 147, 81, 0.450503);
+  }
+
+  &:hover {
+    background-position: 195px;
+  }
+}
+
