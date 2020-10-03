@@ -65,7 +65,7 @@ select {
 
 .title {
   font-weight: 800;
-  @include adaptiv-font(36, 26);
+  font-size: 36px;
   line-height: 1.27;
   text-align: center;
 }

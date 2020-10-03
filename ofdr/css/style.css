@@ -523,7 +523,7 @@ select {
 
 .title {
   font-weight: 800;
-  font-size: calc(26px + 10 * ((100vw - 320px) / 850));
+  font-size: 36px;
   line-height: 1.27;
   text-align: center;
 }
@@ -910,7 +910,7 @@ select {
 }
 
 .intro {
-  min-height: 720px;
+  position: relative;
   background-image: url(../img/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -936,7 +936,7 @@ select {
 .intro__title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: calc(26px + 14 * ((100vw - 320px) / 850));
+  font-size: 40px;
   line-height: 1.27;
 }
 
@@ -952,6 +952,7 @@ select {
 
 .intro__img {
   max-width: 562px;
+  margin-bottom: -10px;
 }
 
 .intro__img img {
@@ -965,6 +966,77 @@ select {
 
 .intro__btn:hover {
   background-position: 211px;
+}
+
+.deco__img {
+  position: absolute;
+  z-index: 99;
+}
+
+.deco__img--01 {
+  top: 34.4%;
+  left: 8%;
+}
+
+.deco__img--02 {
+  bottom: 9%;
+  left: 18%;
+}
+
+.deco__img--03 {
+  top: 8%;
+  left: 4%;
+}
+
+.deco__img--04 {
+  bottom: 28%;
+  left: 37%;
+}
+
+.deco__img--05 {
+  top: 15%;
+  left: 12%;
+}
+
+.deco__img--06 {
+  top: 50%;
+  left: 14%;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.deco__img--07 {
+  top: 25%;
+  left: 23%;
+  -webkit-transform: rotate(-115deg);
+      -ms-transform: rotate(-115deg);
+          transform: rotate(-115deg);
+}
+
+.deco__img--08 {
+  bottom: 37%;
+  left: 50%;
+}
+
+.circle--gray {
+  width: 13px;
+  height: 13px;
+}
+
+.circle--gray path {
+  stroke: #939393;
+  stroke-width: 2px;
+}
+
+.triangle--gray {
+  width: 45px;
+  height: 45px;
+}
+
+.triangle--gray path {
+  stroke: #939393;
+  stroke-width: 2px;
 }
 
 .documents {

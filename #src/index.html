@@ -12,7 +12,7 @@
 <body>
 
   <!-- *~~~~~~~~~~ Intro ~~~~~~~~~~ -->
-  <section class="intro">
+  <section class="intro" id="intro">
 
     @@include('_header.html')
 
@@ -35,6 +35,59 @@
 
       </div>
     </div><!-- .container -->
+    <div class="deco">
+      <svg class="deco__img deco__img--01 circle" width="25" height="25" viewBox="0 0 25 25" fill="none"
+        xmlns="http://www.w3.org/2000/svg" data-parallaxify-range-x="100" data-parallaxify-range-y="50">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M12.5 23C18.299 23 23 18.299 23 12.5C23 6.70101 18.299 2 12.5 2C6.70101 2 2 6.70101 2 12.5C2 18.299 6.70101 23 12.5 23Z"
+          stroke="#86AEF0" stroke-width="3" />
+      </svg>
+      <svg class="deco__img deco__img--02 circle" width="25" height="25" viewBox="0 0 25 25" fill="none"
+        xmlns="http://www.w3.org/2000/svg" data-parallaxify-range-x="200" data-parallaxify-range-y="175">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M12.5 23C18.299 23 23 18.299 23 12.5C23 6.70101 18.299 2 12.5 2C6.70101 2 2 6.70101 2 12.5C2 18.299 6.70101 23 12.5 23Z"
+          stroke="#86AEF0" stroke-width="3" />
+      </svg>
+
+
+      <svg class="deco__img deco__img--03 circle circle--gray" width="25" height="25" viewBox="0 0 25 25" fill="none"
+        xmlns="http://www.w3.org/2000/svg" data-parallaxify-range-x="50" data-parallaxify-range-y="100">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M12.5 23C18.299 23 23 18.299 23 12.5C23 6.70101 18.299 2 12.5 2C6.70101 2 2 6.70101 2 12.5C2 18.299 6.70101 23 12.5 23Z"
+          stroke="#86AEF0" stroke-width="3" />
+      </svg>
+      <svg class="deco__img deco__img--04 circle circle--gray" width="25" height="25" viewBox="0 0 25 25" fill="none"
+        xmlns="http://www.w3.org/2000/svg" data-parallaxify-range-x="150" data-parallaxify-range-y="100">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M12.5 23C18.299 23 23 18.299 23 12.5C23 6.70101 18.299 2 12.5 2C6.70101 2 2 6.70101 2 12.5C2 18.299 6.70101 23 12.5 23Z"
+          stroke="#86AEF0" stroke-width="3" />
+      </svg>
+
+
+      <svg class="deco__img deco__img--05 triangle" width="37" height="37" viewBox="0 0 37 37"
+        fill="none" xmlns="http://www.w3.org/2000/svg" data-parallaxify-range-x="75" data-parallaxify-range-y="75">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.9279 12.16L16.2157 33.5358L3 17.2157L25.9279 12.16Z"
+          stroke="#EFA159" stroke-width="3" />
+      </svg>
+
+
+      <svg class="deco__img deco__img--06 triangle triangle--gray" width="37" height="37" viewBox="0 0 37 37"
+        fill="none" xmlns="http://www.w3.org/2000/svg" data-parallaxify-range-x="30" data-parallaxify-range-y="70">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.9279 12.16L16.2157 33.5358L3 17.2157L25.9279 12.16Z"
+          stroke="#EFA159" stroke-width="3" />
+      </svg>
+      <svg class="deco__img deco__img--07 triangle" width="37" height="37" viewBox="0 0 37 37"
+        fill="none" xmlns="http://www.w3.org/2000/svg" data-parallaxify-range-x="100" data-parallaxify-range-y="50">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.9279 12.16L16.2157 33.5358L3 17.2157L25.9279 12.16Z"
+          stroke="#EFA159" stroke-width="3" />
+      </svg>
+      <svg class="deco__img deco__img--08 triangle" width="37" height="37" viewBox="0 0 37 37"
+        fill="none" xmlns="http://www.w3.org/2000/svg" data-parallaxify-range-x="80" data-parallaxify-range-y="20">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.9279 12.16L16.2157 33.5358L3 17.2157L25.9279 12.16Z"
+          stroke="#EFA159" stroke-width="3" />
+      </svg>
+
+    </div>
   </section><!-- .intro -->
 
   <main class="main">
@@ -362,8 +415,8 @@
             </div>
           </a>
 
-          <a href="#" class="news__items">
-            <div class="news__item">
+          <div class="news__items">
+            <a href="#" class="news__item">
               <div class="news__item-img">
                 <img src="img/news/news-1.jpg" alt="news">
               </div>
@@ -375,7 +428,7 @@
                 Государство планирует реализовать значительные улучшения в сфере Государство планирует реализовать
                 значительные улучшения в сфере Государство планирует реализовать значительные улучшения в сфере
               </div>
-            </div>
+            </a>
 
             <a href="#" class="news__item">
               <div class="news__item-img">
@@ -390,13 +443,12 @@
                 значительные улучшения в сфере Государство планирует реализовать значительные улучшения в сфере
               </div>
             </a>
-          </a>
+          </div>
 
         </div><!-- .news__wrapper -->
         <div class="news__btn">
           <a href="#" class="news__btn-link">ВСЕ НОВОСТИ</a>
         </div>
-
 
       </div><!-- .container -->
     </section><!-- .news -->

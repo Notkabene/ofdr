@@ -1,5 +1,6 @@
-// *для подключения других файлов js (убрать пробел между @ @)
+// *для подключения других файлов js
 @@include('slick.min.js')
+@@include('jquery.parallaxify.js')
 
 
 // Burger меню
@@ -42,3 +43,6 @@ $(document).ready(function () {
 
   });
 });
+
+// Паралакс эффект декора в Intro
+$('#intro').parallaxify();

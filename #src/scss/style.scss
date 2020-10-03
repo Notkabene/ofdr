@@ -156,8 +156,9 @@
 
 //* ~~~~~~~~~~ Intro ~~~~~~~~~~~~~
 .intro {
-  min-height: 720px;
+  // min-height: 720px;
   // padding-top: 160px;
+  position: relative;
   background-image: url(../img/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -180,7 +181,7 @@
   &__title {
     margin-bottom: 30px;
     font-weight: 900;
-    @include adaptiv-font(40, 26);
+    font-size: 40px;
     line-height: 1.27;
   }
 
@@ -195,6 +196,7 @@
 
   &__img {
     max-width: 562px;
+    margin-bottom: -10px;
     img {
       width: 100%;
     }
@@ -208,6 +210,74 @@
     }
   }
 }
+
+// ~~~~~~~~~~ Intro Deco ~~~~~~~~~~~~~
+
+.deco__img {
+  position: absolute;
+  z-index: 99;
+  &--01 {
+    top: 34.4%;
+    left: 8%;
+  }
+
+  &--02 {
+    bottom: 9%;
+    left: 18%;
+  }
+
+  &--03 {
+    top: 8%;
+    left: 4%;
+  }
+
+  &--04 {
+    bottom: 28%;
+    left: 37%;
+  }
+
+  &--05 {
+    top: 15%;
+    left: 12%;
+  }
+
+  &--06 {
+    top: 50%;
+    left: 14%;
+    transform: rotate(90deg);
+  }
+
+  &--07 {
+    top: 25%;
+    left: 23%;
+    transform: rotate(-115deg);
+  }
+
+  &--08 {
+    bottom: 37%;
+    left: 50%;
+  }
+
+}
+
+.circle--gray {
+  width: 13px;
+  height: 13px;
+  path {
+    stroke: #939393;
+    stroke-width: 2px;
+  }
+}
+
+.triangle--gray {
+  width: 45px;
+  height: 45px;
+  path {
+    stroke: #939393;
+    stroke-width: 2px;
+  }
+}
+
 
 //* ~~~~~~~~~~ Documents ~~~~~~~~~~~~~
 .documents {
@@ -434,6 +504,7 @@
 //* ~~~~~~~~~~ News ~~~~~~~~~~~~~
 .news {
   margin: 52px 0 70px 0;
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -516,6 +587,20 @@
     }
 
   }
+
+
+}
+.news__deco--01 {
+
+}
+.news__deco--02 {
+
+}
+.news__deco--03 {
+
+}
+.news__deco--04 {
+
 }
 
 .promo-info {
